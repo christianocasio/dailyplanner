@@ -2,35 +2,33 @@ var NowMoment = moment();
 var current = document.getElementById('currentDay');
 current.innerHTML = NowMoment.format('dddd, MMMM Do YYYY, h:mm:ss a');
 
-const rows = document.getElementsByClassName("row");
-let currentHour = parseInt(moment().format('H'));
+// const rows = document.getElementsByClassName("row");
+// let currentHour = parseInt(moment().format('H'));
 
-Array.from(rows).forEach(row => {
-  let
-    rowIdString = row.id,
-    rowHour;
-  if (rowIdString) {
-    rowHour = parseInt(rowIdString);
-  }
-  if (rowHour) {
-    // Compares row id to current hour and sets color accordingly
-    if (currentHour === rowHour) {
-      setColor(row, "past");
-    } else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
-      setColor(row, "present");
-    } else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
-      setColor(row, "future");
-    } else {
-      setColor(row, "grey");
-    }
-  }
-});
+// Array.from(rows).forEach(row => {
+//   let
+//     rowIdString = row.id,
+//     rowHour;
+//   if (rowIdString) {
+//     rowHour = parseInt(rowIdString);
+//   }
+//   if (rowHour) {
+//     // Compares row id to current hour and sets color accordingly
+//     if (currentHour === rowHour) {
+//       setColor(row, "past");
+//     } else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
+//       setColor(row, "present");
+//     } else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
+//       setColor(row, "future");
+//     } else {
+//       setColor(row, "grey");
+//     }
+//   }
+// });
 
-function setColor(element, color) {
-  element.style.backgroundColor = color;
-}
-
-
+// function setColor(element, color) {
+//   element.style.backgroundColor = color;
+// }
 
 
 window.onload = function(){
