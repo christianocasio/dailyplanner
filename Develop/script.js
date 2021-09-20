@@ -32,69 +32,6 @@ function setColor(element, color) {
 
 
 
-// var colorChange = [
-//   document.getElementById("nine"),
-//   document.getElementById("div-10"),
-//   document.getElementById("div-11"),
-//   document.getElementById("div-12"),
-//   document.getElementById("div-13"),
-//   document.getElementById("div-14"),
-//   document.getElementById("div-15"),
-//   document.getElementById("div-16"),
-//   document.getElementById("div-17"),
-// ]
-
-// var hourNow = moment().hours();
-
-
-// function updateTime() {
-//   var now = moment();
-//   var pseudo = now.format("LL hh:mm ss A");
-
-//   currentDay.textContent = pseudo;
-
-//   for (var i = 0; i < colorChange.length; i++) {
-      
-//       if (currentDiv < hourNow){
-//           colorChange[i].className = "past";
-//       };
-//   }
-// }
-
-
-
-
-
-
-// var colorChange = [
-//   document.getElementById("div-9"),
-//   document.getElementById("div-10"),
-//   document.getElementById("div-11"),
-//   document.getElementById("div-12"),
-//   document.getElementById("div-13"),
-//   document.getElementById("div-14"),
-//   document.getElementById("div-15"),
-//   document.getElementById("div-16"),
-//   document.getElementById("div-17"),
-// ]
-// console.log(colorChange);
-// var hourNow = moment().hours();
-// console.log(hourNow);
-
-// function updateTime() {
-//   var now = moment();
-//   var pseudo = now.format("LL hh:mm ss A");
-
-//   currentDay.textContent = pseudo;
-
-//   for (var i = 0; i < colorChange.length; i++) {
-//       var currentDiv = parseInt(colorChange[i].id.split("-")[1]);
-//       if (currentDiv < hourNow){
-//           colorChange[i].className = "past col-sm-8 row";
-//       };
-//   }
-
-
 
 window.onload = function(){
     nine();
